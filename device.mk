@@ -30,6 +30,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    EvolutionSystemUIResTarget \
+    OPlusExtrasResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
