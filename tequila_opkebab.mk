@@ -13,9 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_kebab
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := tequila_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -33,12 +36,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := OnePlus/OnePlus8T/OnePlus8T:13/RKQ1.211119.001/R.c9b6f1_9-1db5a:user/release-keys
 
-# Add Elixir Flags
-ELIXIR_MAINTAINER := Itachi
-ELIXIR_BUILD_TYPE := OFFICIAL
-BUILD_USERNAME := Itachi
-BUILD_HOSTNAME := Elixir
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-EXTRA_UDFPS_ANIMATIONS := true

@@ -1,14 +1,14 @@
 #
 # Copyright (C) 2018-2019 The LineageOS Project
-# Copyright (C) 2022 The Project Elixir
+# Copyright (C) 2023 The tequilaOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_kebab.mk
+    $(LOCAL_DIR)/tequila_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_kebab-user \
-    aosp_kebab-userdebug \
-    aosp_kebab-eng
+    tequila_kebab-user \
+    tequila_kebab-userdebug \
+    tequila_kebab-eng
